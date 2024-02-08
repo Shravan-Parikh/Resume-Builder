@@ -21,7 +21,7 @@ const Navbar = () => {
                 w='full'
                 alignItems={'center'}
             >
-                <Heading as='h3' ml={{ base: 0, sm: 8 }} size='lg' fontWeight={'thin'} color='Gray.500' style={{ fontFamily: "Pacifico" }}>Kartavya HR</Heading>
+                <Heading as='h3' ml={{ base: 0, sm: 8 }} size='lg' fontWeight={'thin'} color='Gray.500' style={{ fontFamily: "Pacifico" }}>Resume Builder</Heading>
                 <Spacer></Spacer>
                 {/* <HStack spacing={10} mr={{ base: 0, sm: 8 }} as='nav' style={{ fontFamily: 'Poppins' }}>
                     <Text as='a' href='#' fontSize='lg'>Home</Text>
