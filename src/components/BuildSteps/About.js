@@ -13,12 +13,15 @@ import ImageUpload from "../ImageUploadButton/ImageUpload.component";
 const About = () => {
   const { about, setAbout } = useResume();
 
+  const documentTitle= about.name
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setAbout({ ...about, [name]: value });
   };
 
   return (
+    
     <>
       <Stack spacing={4} mb={2}>
         {about.picture ? (

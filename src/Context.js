@@ -3,7 +3,7 @@ import { useToast } from '@chakra-ui/react';
 
 const ResumeContext = createContext();
 
-export const useResume = () => useContext(ResumeContext);
+export const    useResume = () => useContext(ResumeContext);
 
 export const ResumeProvider = ({ children }) => {
 
@@ -21,6 +21,7 @@ export const ResumeProvider = ({ children }) => {
         linkedin: "",
         picture:"",
     });
+    
 
     const [educationList, setEducationList] = useState([
         {
@@ -124,7 +125,7 @@ export const ResumeProvider = ({ children }) => {
             url: "",
         },
     ]);
-
+    const getAboutName = () => about.name;
 
     // useEffect(() => {
     //     toast({
@@ -134,7 +135,7 @@ export const ResumeProvider = ({ children }) => {
     //       })
     // }, [theme]);
 
-    const value = { about, setAbout, educationList, setEducationList, skills, setSkills, workList, setWorkList, projects, setProjects, printElem, theme, setTheme };
+    const value = { about, setAbout, educationList, setEducationList, skills, setSkills, workList, setWorkList, projects, setProjects, printElem, theme, setTheme,getAboutName};
 
     return (
         <ResumeContext.Provider value={value}>
